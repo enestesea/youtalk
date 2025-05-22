@@ -14,11 +14,7 @@
 
 /* Links */
 
-a, a:link, a:visited  {
-    text-decoration: none;
-}
-
-a:hover  {
+a, a:link {
     text-decoration: none;
 }
 
@@ -107,7 +103,6 @@ body {
 .header {
     border-bottom: 1px solid #EFF5FB;
     height: 76px;
-    width: 100%;
 }
 
 .container {
@@ -115,7 +110,7 @@ body {
     top: 0;
     max-width: 1240px;
     padding: 0 20px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .header__inner {
@@ -132,7 +127,7 @@ body {
 }
 
 .header__logo {
-    margin: 20px 50px 20px;
+    margin: 20px 51px 20px 0;
 }
 
 .header__menu {
@@ -309,4 +304,191 @@ nav ul li:nth-last-child(2)::after {
     font-weight: 300;
     line-height: 20px;
     opacity: 0.7;
+}
+/*main*/
+.main-background-image{
+    background-image: url("../images/blog.svg");
+    background-repeat: no-repeat;
+    background-position: center 320px;
+    background-size: 100%;
+}
+.parts-of-page {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+.parts-of-page__item a{
+    color: #333333B2;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+}
+
+.parts-of-page__item:not(:last-child) {
+    margin-right: 4px;
+}
+
+.parts-of-page__item img {
+    margin-top: 7px;
+}
+
+.main__headline {
+    margin-top: 30px;
+    margin-bottom: 32px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.main__section-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.main__section-menu-item a{
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 24px;
+    border: #C1C5CD solid 1px;
+    padding: 6px 8px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.main__section-menu-item a:hover {
+    border-color: #03B2A5;
+}
+
+.main__article-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.main__article-selection-wrap {
+    height: auto;
+    overflow: hidden;
+    outline: 1px solid #C1C5CD;
+    width: 49%;
+    position: relative;
+    z-index: 1;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    margin-bottom: 23px;
+    max-height: 588px;
+    max-width: 499px;
+}
+
+.main__article-selection-image {
+    width: 100%;
+}
+
+.small-image {
+    width: 32%;
+}
+
+.main__article-selection-category {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    align-items: flex-start;
+}
+
+.main__article-selection-item {
+    color: #333333;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 20px;
+    border-radius: 24px;
+    border: 1px solid #C1C5CD;
+    background: #FFFFFFB2;
+    padding: 6px 8px;
+    margin: 8px 8px;
+}
+.main__article-selection-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 140px;
+    margin-bottom: 68px;
+}
+.main__article-selection-container:nth-child(1) {
+    height: 240px;
+}
+.main__article-selection-container-heading {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #333333;
+    padding: 16px 16px 8px 16px;
+}
+
+.main__article-selection-container-author {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color: #494949;
+    padding-left: 16px;
+    padding-bottom: 8px;
+}
+
+.main__article-selection-container-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    padding: 0 16px 25px 16px;
+    height: 352px;
+}
+
+.main__article-selection-date {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color: #868686;
+    padding-left: 16px;
+    margin-bottom: 20px;
+}
+
+.main__inner {
+    width: 100%;
+}
+
+.main-button-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+    margin-bottom: 96px;
+}
+
+.main__button {
+    padding: 14px 20px;
+    width: 182px;
+    background-color: #03B2A5;
+    color: #E3F5F5;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main__button:hover {
+    background-color: #E3F5F5;
+    color: #03B2A5;
 }
